@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61,<68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "douyin-spark-assistant"
+version = "1.7.1"
+description = "Local Douyin spark-streak assistant: schedules messages, generates text with an LLM, and sends them through a dedicated Edge automation profile."
+requires-python = ">=3.10"
+dependencies = ["playwright==1.62.0"]
+
+[project.scripts]
+douyin-spark = "douyin_spark.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

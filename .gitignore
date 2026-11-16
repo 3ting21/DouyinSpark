@@ -1,0 +1,13 @@
+.venv*/
+.uvpython/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+release/
+*.db
+browser_data/
+*.log
+.env
+*.egg-info/
